@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Ask a Free Legal Question Online</h1>
+<br />
+<h4 style="line-height:30px;">Stuck with a legal issue? Submit your query below to get FREE answers by email within a few hours. Expert legal advice from top rated lawyers in your city enables you to take better decisions about your legal situation.</h4><br />
+
+<form action="insert.php" method="POST">
+  <div class="container">
+<select name="category" id="category" class="select-form" required>
+<option value=''>Select Area of law</option>
+<option value="37">Arbitration</option>
+<option value="136">Armed Forces Tribunal</option>
+<option value="139">Banking / Finance</option>
+<option value="38">Cheque Bounce</option>
+<option value="133">Child Custody</option>
+<option value="138">Civil</option>
+<option value="39">Consumer Court</option>
+<option value="126">Corporate</option>
+<option value="41">Criminal</option>
+<option value="42">Customs & Central Excise</option>
+<option value="43">Cyber Crime</option>
+<option value="44">Divorce</option>
+<option value="45">Documentation</option>
+<option value="46">Family</option>
+<option value="140">GST</option>
+<option value="47">Immigration</option>
+<option value="49">Insurance</option>
+<option value="51">International Law</option>
+<option value="53">Labour & Service</option>
+<option value="54">Landlord/Tenant</option>
+<option value="55">Medical Negligence</option>
+<option value="56">Motor Accident</option>
+<option value="135">Muslim Law</option>
+<option value="57">Property</option>
+<option value="58">R.T.I</option>
+<option value="59">Recovery</option>
+<option value="50">Startup</option>
+<option value="137">Supreme Court</option>
+<option value="60">Tax</option>
+<option value="40">Trademark & Copyright</option>
+<option value="61">Wills / Trusts</option>
+</select>
+</div>
+<div class="container">
+	<label for="country">Country</label>
+    <select name="city" class="select-form" id="location" required>
+			<option value="">Select City</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Bangalore</option>
+			</select>
+</div>
+<div class="container">
+<input style="margin-bottom:0px;" class="input-text form-control" name="subject" id="subject" maxlength="70" type="text" placeholder="Subject (Limit 70 characters)" value="" required>
+<div id="subjecttext" style="color:red;"></div>
+</div>
+<div class="container">
+<textarea style="margin-bottom:10px;" name="question" placeholder="Question (Limit 1000 characters)" maxlength="1000" class="input-text form-control" id="question" rows="5" required></textarea>
+<span>If this is a matrimonial or property question, please mention your religion as laws may differ.</span>
+<div id="textarea_feedback" style="color:red;"></div>
+</div>
+   <h3 style="margin-bottom:10px;">Your Contact Details</h3>
+
+<div class="container">
+<input class="input-text form-control" name="name" id="name" maxlength="50" type="text" placeholder="Your Name" value="" required>
+<div id="subjecttext"></div>
+</div>
+
+<div class="container">
+<input style="margin-bottom:10px;" name="phone" id="phone" maxlength="14" type="text" placeholder="Your Contact No." class="input-text form-control" value="" required>
+<span><br /><Br /></span>
+
+</div>
+
+<div class="container">
+<input style="margin-bottom:10px;" name="email" id="email" maxlength="50" type="email" placeholder="Your E-mail" class="input-text form-control" value="" required>
+<span>You will be emailed all responses on this email id.<br /><Br /></span>
+</div>
+
+<input type="submit" name="submit" value="Submit" class="button button-primary">
+</body>
+</html>
