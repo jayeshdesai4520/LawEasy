@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Talk to a lawyer</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF5fff0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Talk to a lawyer</h3>
+<div class="container">
+<select name="category" id="category" class="select-form" required>
+<option value=''>Select Area of law</option>
+<option value="1">Arbitration</option>
+<option value="2">Armed Forces Tribunal</option>
+<option value="3">Banking / Finance</option>
+<option value="4">Cheque Bounce</option>
+<option value="5">Child Custody</option>
+<option value="6">Civil</option>
+<option value="7">Consumer Court</option>
+<option value="8">Corporate</option>
+<option value="9">Criminal</option>
+<option value="10">Customs & Central Excise</option>
+<option value="11">Cyber Crime</option>
+<option value="12">Divorce</option>
+<option value="13">Documentation</option>
+<option value="14">Family</option>
+<option value="15">GST</option>
+<option value="16">Immigration</option>
+<option value="17">Insurance</option>
+<option value="18">International Law</option>
+<option value="19">Labour & Service</option>
+<option value="20">Landlord/Tenant</option>
+<option value="21">Medical Negligence</option>
+<option value="22">Motor Accident</option>
+<option value="23">Muslim Law</option>
+<option value="24">Property</option>
+<option value="25">R.T.I</option>
+<option value="26">Recovery</option>
+<option value="27">Startup</option>
+<option value="28">Supreme Court</option>
+<option value="29">Tax</option>
+<option value="30">Trademark & Copyright</option>
+<option value="31">Wills / Trusts</option>
+</select>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+	<label for="country">Country</label>
+    <select name="city" class="select-form" id="location" required>
+			<option value="">Select City</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Bangalore</option>
+			</select>
+
+    <label for="name">Email</label>
+    <input type="text" id="email" pattern="[^ @]*@[^ @]*"name="email" placeholder="Your email.." required>
+    <button type="submit"value="Submit" formaction="file:///C:/Users/admin/Desktop/basic-88/index.html">Submit</button>
+    
+  </form>
+</div>
+
+</body>
+</html>
